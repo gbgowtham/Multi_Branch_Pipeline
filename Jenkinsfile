@@ -4,6 +4,11 @@ pipeline {
         maven 'maven3' 
     }
     stages {
+        stage('Pull Code From GitHub') {
+            steps {
+                git 'https://github.com'
+            }
+        }
       stage ('Build') {
         steps {
           script{
