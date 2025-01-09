@@ -6,7 +6,7 @@ pipeline {
     stages {
         stage('Pull Code From GitHub') {
             steps {
-                git 'https://github.com'
+                git 'https://github.com/gbgowtham/Multi_Branch_Pipeline.git'
             }
         }
       stage ('Build') {
